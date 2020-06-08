@@ -35,7 +35,7 @@ cd ..
 wget https://github.com/plusvic/yara/archive/v3.4.0.tar.gz
 tar -xzvf v3.4.0.tar.gz
 cd yara-3.4.0/
-sudo apt-get install automake libtool make gcc libssl-dev libjansson-dev libmagic-dev
+sudo apt-get install automake libtool make gcc libssl1.0-dev libjansson-dev libmagic-dev
 ./bootstrap.sh
 ./configure --with-crypto --enable-cuckoo --enable-magic
 make
